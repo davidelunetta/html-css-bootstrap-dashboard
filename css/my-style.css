@@ -32,3 +32,7 @@ main{
     width: calc(100% - 150px);
     overflow-y: auto;
 }
+/* HEADER  */
+.search-bar{
+    width: calc(100% - 50px);
+}
