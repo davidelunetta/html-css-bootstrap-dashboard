@@ -40,7 +40,7 @@
 
             <div id="main-content">
                 <section id="main-nav" class="bg-primary">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-around">
                         <div id="nav-left" class="d-flex flex-row">
                             <h2 class="text-white fw-semibold pe-2">Boolean</h2>
                             <div class="pt-2"><small class="my-border py-1 px-1 bg-secondary text-white">Piano blaze</small></div>
@@ -52,11 +52,12 @@
                         
                         <div id="nav-center">
                             <span class="text-white">Studenti online negli ultimi 30 minuti</span>
-                            <h3 class="text-white">120</h3>
+                            <h3 class="text-white">125</h3>
                         </div>
                         <div id="nav-right">
                             <div>
-                                <a class="btn btn-primary pt-3 fw-bold" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                <span class="text-white">Nuovo studente</span>
+                                <a class="btn btn-primary mx-2 my-1 fw-bold text-white border" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                 +
                                 </a>
                                 <div class="offcanvas my-offcanvas offcanvas-end " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -66,7 +67,9 @@
                                     </div>
                                     <div class="offcanvas-body">
                                       <div>
+
 <!-- OFFCANVAS CONTENT  -->
+
                                         <form class="row g-3">
                                             <div class="col-md-6">
                                                 <label for="input-text" class="form-label">Nome</label>
@@ -90,39 +93,52 @@
                                               <label for="inputPassword4" class="form-label">Password</label>
                                               <input type="password" class="form-control" id="inputPassword4">
                                             </div>
+                                            <div class="col-md-6 ">
+                                                <label for="inputEmail4" class="form-label">Indirizzo Email</label>
+                                                <div class="input-group">
+                                                  <div class="input-group-text">
+                                                      @
+                                                      
+                                                  </div>
+                                                  <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                              </div>
                                             <div class="col-12">
-                                              <label for="inputAddress" class="form-label">Address</label>
-                                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                            </div>
-                                            <div class="col-12">
-                                              <label for="inputAddress2" class="form-label">Address 2</label>
-                                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                              <label for="inputAddress" class="form-label">Indirizzo</label>
+                                              <input type="text" class="form-control" id="inputAddress">
                                             </div>
                                             <div class="col-md-6">
-                                              <label for="inputCity" class="form-label">City</label>
+                                              <label for="inputCity" class="form-label">Città</label>
                                               <input type="text" class="form-control" id="inputCity">
                                             </div>
                                             <div class="col-md-4">
-                                              <label for="inputState" class="form-label">State</label>
+                                              <label for="inputState" class="form-label">Stato</label>
                                               <select id="inputState" class="form-select">
-                                                <option selected>Choose...</option>
-                                                <option>...</option>
+                                                <option selected>Scegli...</option>
+                                                <option>Palermo</option>
+                                                <option>Roma</option>
+                                                <option>Milano</option>
                                               </select>
                                             </div>
                                             <div class="col-md-2">
-                                              <label for="inputZip" class="form-label">Zip</label>
+                                              <label for="inputZip" class="form-label">Cap</label>
                                               <input type="text" class="form-control" id="inputZip">
                                             </div>
                                             <div class="col-12">
                                               <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="gridCheck">
                                                 <label class="form-check-label" for="gridCheck">
-                                                  Check me out
+                                                  Seleziona per proseguire
                                                 </label>
                                               </div>
                                             </div>
                                             <div class="col-12">
-                                              <button type="submit" class="btn btn-primary">Sign in</button>
+                                              <button type="submit" class="btn btn-primary">Salva</button>
+                                              <button type="submit" class="btn btn-warning">Svuota</button>
                                             </div>
                                           </form>
                                       </div>
